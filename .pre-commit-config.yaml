@@ -1,0 +1,20 @@
+# Update this file regularly:
+# https://pre-commit.com/#updating-hooks-automatically
+exclude: migrations
+repos:
+#- repo: https://github.com/pycqa/isort
+#  rev: 5.12.0
+#  hooks:
+#  - id: isort
+#    name: isort
+- repo: https://github.com/psf/black
+  rev: 23.1.0
+  hooks:
+  - id: black
+    name: Black
+- repo: https://github.com/pycqa/flake8
+  rev: 6.0.0
+  hooks:
+  - id: flake8
+    name: Flake8
+    args: [ '--config=setup.cfg', '--ignore=E722,W503,E501,F401,F403,E203' ]
