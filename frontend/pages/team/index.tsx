@@ -48,7 +48,7 @@ const OurTeam = () => {
                             <div><button className={`flex h-10  ${ bgColor == 1 ? "activeButton" : ""  } px-4 py-5 items-center rounded-3xl bg-blend-luminosity text-center`} >Alum</button></div>
                         </div>
                     </div>
-                    <div className="mt-5 m-auto block text-center overflow-y-scroll  scroll-smooth scrollbar-thin h-[66vh] w-[75%] pl-[2%] pt-[1%] flex flex-row flex-wrap overflow-hidden">
+                    <div className="mt-5 m-auto block text-center overflow-y-scroll  scroll-smooth scrollbar-thin h-[66vh] w-[75%] pl-[2%] pt-[1%] flex flex-row flex-wrap overflow-hidden justify-around">
                         
                        { members.map((member,it)=>{
                             return(<>
